@@ -182,7 +182,7 @@ class Region {
       throw new Error('Parameter key is an invalid string');
     }
 
-    if (!gesture instanceof Gesture) {
+    if (!(gesture instanceof Gesture)) {
       throw new Error('Parameter gesture is an invalid Gesture object');
     }
 
